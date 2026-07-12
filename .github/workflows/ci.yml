@@ -33,6 +33,10 @@ jobs:
       - name: Show Gihub Variables NODE
         run: |
           echo "Node Version: ${{ vars.NODE_VERSION }}"
+
+      - name: Deploy API
+        run: |
+          echo "Deploying with key ${{secrets.API_KEY}}"
          
       # Variables a nivel del step    
       - name: Build

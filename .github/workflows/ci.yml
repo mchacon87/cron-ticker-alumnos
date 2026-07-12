@@ -28,6 +28,11 @@ jobs:
       - name: Show Gihub Variables
         run: |
           echo "App Version: ${{ vars.APP_VERSION }}"
+
+      # Agregar  variable Node Version 24
+      - name: Show Gihub Variables NODE
+        run: |
+          echo "Node Version: ${{ vars.NODE_VERSION }}"
          
       # Variables a nivel del step    
       - name: Build
